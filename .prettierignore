@@ -1,4 +1,7 @@
 .cache
-package.json
+.husky
+.storybook
+static
+storybook-static
 package-lock.json
 public
