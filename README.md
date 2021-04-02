@@ -5,7 +5,16 @@
   My Gatsby's starter - SASS/Jest/Cypress/Storybook & other cool stuff
 </h1>
 
-## Aliases
+## ✨ Husky
+
+Run `npx husky install` to activate pre-commit eslint check
+
+## 🧪 Testing
+
+- Testing with jest : `npm test`
+- Run e2e tests : `npm run cy:open`
+
+## 💫 Aliases
 
 To add aliases, just add them in jsconfig.js. They will automatically be added in eslint, jest and gatsby configs.
 
@@ -22,9 +31,3 @@ Example :
 	}
 }
 ```
-
-## 🧪 Testing
-
-- just run `npm test`
-- Cypress is configured, just run `npm run cy:open`
-- StoryBook is configured, just run `npm run sb`
