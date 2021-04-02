@@ -2,7 +2,7 @@
     <img alt="Gatsby" src="https://res.cloudinary.com/anthony-jeamme-stuff/image/upload/v1617360957/shares/anthony-jeamme-gatsby-starter.svg" width="400" />
 </p>
 <h1 align="center">
-  My Gatsby's starter - SASS/Jest/Cypress/Storybook & other cool stuff
+  My Gatsby's starter - SASS/Jest/Cypress & other cool stuff
 </h1>
 
 ## ✨ Husky
