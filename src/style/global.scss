@@ -1,3 +1,40 @@
+@import './variables.scss';
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;800&family=Libre+Baskerville:wght@400;700&display=swap');
+
 body {
 	margin: 0;
+	min-height: 100vh;
+	background-color: #222942;
+	color: white;
+
+	font-size: 20px;
+	font-family: 'Inter', sans-serif;
+
+	background-image: linear-gradient(
+			to bottom,
+			rgba(255, 255, 255, 0),
+			rgba(#34425e, 0)
+		),
+		url('/images/bg-point.png');
+	background-size: 100% 100%, 20px 20px;
+	background-position: center;
+
+	@media (max-width: 800px) {
+		font-size: 16px;
+	}
+
+	h1 {
+		font-weight: 800;
+		font-family: 'Inter', sans-serif;
+	}
+
+	p {
+		line-height: 1.6;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: underline;
+	}
 }

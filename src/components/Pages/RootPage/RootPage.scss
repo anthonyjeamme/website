@@ -1,3 +1,144 @@
-.RootPage {
+@import '~style/variables.scss';
+@import '~style/animations.scss';
 
+@keyframes fchhhhhouuuu {
+	from {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+
+	to {
+		opacity: 1;
+		transform: none;
+	}
+}
+
+.RootPage {
+	.content {
+		position: relative;
+		p {
+			animation-name: fchhhhhouuuu;
+			animation-duration: 500ms;
+			animation-delay: 100ms;
+			animation-fill-mode: backwards;
+
+			&:nth-child(1) {
+				animation-delay: 250ms;
+			}
+			&:nth-child(2) {
+				animation-delay: 300ms;
+			}
+			&:nth-child(3) {
+				animation-delay: 350ms;
+			}
+			&:nth-child(4) {
+				animation-delay: 400ms;
+			}
+			&:nth-child(5) {
+				animation-delay: 450ms;
+			}
+			&:nth-child(6) {
+				animation-delay: 500ms;
+			}
+			&:nth-child(7) {
+				animation-delay: 550ms;
+			}
+			&:nth-child(8) {
+				animation-delay: 600ms;
+			}
+		}
+		@media (max-width: 800px) {
+			padding: 0 20px;
+		}
+	}
+	.sticky-title {
+		// position: sticky;
+		z-index: 3;
+		top: 0;
+		padding: 20px;
+		height: 100px;
+		margin-bottom: 40px;
+		display: flex;
+		transition: opacity 200ms;
+		pointer-events: none;
+
+		@media (max-width: 800px) {
+			// margin-bottom: 0;
+
+			// height: 52px;
+		}
+
+		h1 {
+			// margin-bottom: -30px;
+			margin: 0;
+			font-size: 50px;
+			line-height: 1;
+			z-index: 2;
+			transition: font-size 300ms, opacity 300ms;
+			animation-name: fchhhhhouuuu;
+			animation-duration: 500ms;
+			animation-delay: 150ms;
+			animation-fill-mode: backwards;
+			pointer-events: all;
+
+			@media (max-width: 800px) {
+				// font-size: 26px;
+			}
+			// white-space: nowrap;
+
+			// font-size: 22px;
+		}
+
+		&.mini {
+			h1 {
+				@media (max-width: 800px) {
+					opacity: 0;
+				}
+				// font-size: 22px;
+			}
+		}
+	}
+
+	.ArticleHeader {
+		position: relative;
+		padding-top: 40px;
+		box-sizing: border-box;
+		margin-bottom: -50px;
+
+		@media (max-width: 800px) {
+			margin-bottom: -34px;
+		}
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		animation-name: fadeIn;
+		animation-duration: 800ms;
+		transition: height 200ms;
+
+		.banner {
+			width: 100%;
+			height: 250px;
+			object-fit: contain;
+			position: relative;
+			z-index: 2;
+			transition: transform 50ms;
+		}
+
+		.fixed-bar {
+			z-index: 4;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 65px;
+			margin-top: auto;
+			// transition: opacity 300ms;
+			opacity: 0;
+			// background-image: linear-gradient(
+			// 	to top,
+			// 	rgba($dark, 0.3),
+			// 	transparent 150px
+			// );
+		}
+	}
 }

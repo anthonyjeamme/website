@@ -5,6 +5,7 @@
 	"version": "0.1.0",
 	"author": "Anthony JEAMME <anthony@jeamme.fr>",
 	"dependencies": {
+		"@bit/anthonyjeamme.basics.button": "file:components/button",
 		"gatsby": "^3.1.2",
 		"gatsby-plugin-gatsby-cloud": "^2.1.0",
 		"gatsby-plugin-image": "^1.1.2",
@@ -20,6 +21,7 @@
 		"react-helmet": "^6.1.0"
 	},
 	"devDependencies": {
+		"@testing-library/jest-dom": "^5.11.10",
 		"@testing-library/react": "^11.2.6",
 		"@types/jest": "^26.0.22",
 		"@types/react-test-renderer": "^17.0.1",
@@ -50,7 +52,7 @@
 	"license": "0BSD",
 	"scripts": {
 		"build": "gatsby build",
-		"develop": "gatsby develop",
+		"develop": "gatsby develop  --host 0.0.0.0 --port 9000",
 		"start": "npm run develop",
 		"serve": "gatsby serve",
 		"clean": "gatsby clean",
@@ -73,5 +75,10 @@
 		"hooks": {
 			"pre-commit": "lint-staged"
 		}
+	},
+	"bit": {
+		"env": {},
+		"componentsDefaultDirectory": "src/components/{name}",
+		"packageManager": "npm"
 	}
 }

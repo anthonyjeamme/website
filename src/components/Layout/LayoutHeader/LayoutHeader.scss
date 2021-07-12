@@ -1,0 +1,149 @@
+@import '~style/variables.scss';
+
+.LayoutHeader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 20px 30px;
+	height: 65px;
+	box-sizing: border-box;
+	display: flex;
+	z-index: 5;
+	align-items: center;
+	justify-content: center;
+
+	@media (max-width: 800px) {
+		z-index: 5;
+	}
+
+	& > .title {
+		width: 800px;
+		display: flex;
+		font-size: 14px;
+		text-transform: uppercase;
+
+		transition: opacity 200ms, transform 200ms;
+		opacity: 0;
+		pointer-events: none;
+		transform: translateY(-20px);
+
+		&.active {
+			opacity: 1;
+			pointer-events: all;
+
+			transform: none;
+		}
+
+		& > .mdi {
+			margin: 0 10px;
+		}
+	}
+
+	& > .brand {
+		position: absolute;
+		left: 20px;
+		top: 0;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		font-size: 16px;
+		font-weight: 500;
+		& > a {
+			text-decoration: none;
+		}
+	}
+
+	.burger {
+		border: 0;
+		background-color: transparent;
+		height: 42px;
+		width: 42px;
+		font-size: 30px;
+		color: white;
+		outline: none;
+		border-radius: 4px;
+		margin: -10px -10px -10px 0;
+		transition: background-color 200ms, box-shadow 200ms, transform 200ms;
+		box-shadow: inset 0px 0px 0px rgba(white, 0.1),
+			inset 0px 4px 4px rgba($dark, 0), inset 1px 1px 0 rgba($dark, 0);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+
+		display: none;
+
+		@media (max-width: 800px) {
+			display: flex;
+		}
+
+		&:hover {
+			background-color: rgba($dark, 0.05);
+		}
+
+		& > span {
+			transition: transform 100ms;
+		}
+
+		&:active {
+			background-color: rgba($dark, 0.05);
+
+			box-shadow: inset -1px -1px 0px rgba(white, 0),
+				inset 0 4px 4px rgba($dark, 0.2), inset 1px 1px 0 rgba($dark, 0.1);
+
+			& > span {
+				transform: translateY(2px);
+			}
+		}
+	}
+
+	& > .nav {
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		right: 20px;
+		display: flex;
+		align-items: center;
+		font-size: 14px;
+		text-transform: uppercase;
+
+		& > * {
+			display: block;
+			text-decoration: none;
+			cursor: pointer;
+			padding: 10px 20px;
+			background-color: transparent;
+			border-radius: 4px;
+			transition: background-color 200ms, opacity 200ms, box-shadow 200ms;
+			user-select: none;
+			color: rgba(white, 0.8);
+			outline: none;
+
+			&:not(:nth-last-child(1)) {
+				margin-right: 10px;
+			}
+
+			&:hover,
+			&:focus {
+				background-color: rgba(white, 0.03);
+				color: white;
+				box-shadow: inset -1px 0 0 rgba(white, 0.03),
+					inset 1px 0 0 rgba(white, 0.03), inset 0 -1px 0 rgba(white, 0.03);
+			}
+
+			&:active {
+				background-color: rgba(white, 0.1);
+				color: white;
+				box-shadow: inset -1px 0 0 rgba(white, 0.1),
+					inset 1px 0 0 rgba(white, 0.1), inset 0 -1px 0 rgba(white, 0.1);
+			}
+		}
+	}
+
+	@media (max-width: 800px) {
+		.nav {
+			display: none;
+		}
+	}
+}

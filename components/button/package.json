@@ -1,0 +1,105 @@
+{
+  "name": "@bit/anthonyjeamme.basics.button",
+  "version": "0.0.2",
+  "homepage": "https://bit.dev/anthonyjeamme/basics/button",
+  "main": "dist/Button.js",
+  "componentId": {
+    "scope": "anthonyjeamme.basics",
+    "name": "button",
+    "version": "0.0.2"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/react": "^17.0.3",
+    "@types/chai": "^4.2.8",
+    "@types/sinon": "^7.5.1",
+    "@types/mocha": "^5.0.0",
+    "chai": "^4.2.0",
+    "sinon": "^8.1.1"
+  },
+  "peerDependencies": {
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "@types/react": "16.9.11",
+    "@types/react-dom": "16.9.4"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": {
+        "bit.envs/compilers/react-typescript@3.1.43": {
+          "rawConfig": {
+            "compilerPath": "typescript/bin/tsc",
+            "compilerArguments": [
+              "--declaration"
+            ],
+            "compiledFileTypes": [
+              ".ts",
+              ".tsx"
+            ],
+            "configFileName": "tsconfig.json",
+            "tsconfig": {
+              "compilerOptions": {
+                "outDir": "dist",
+                "target": "ES5",
+                "sourceMap": false,
+                "moduleResolution": "Node",
+                "esModuleInterop": true,
+                "module": "CommonJS",
+                "allowSyntheticDefaultImports": true,
+                "resolveJsonModule": true,
+                "declaration": true,
+                "experimentalDecorators": true,
+                "inlineSourceMap": true,
+                "inlineSources": false,
+                "lib": [
+                  "dom",
+                  "es2015"
+                ],
+                "jsx": "react",
+                "rootDir": "./",
+                "removeComments": false,
+                "typeRoots": [
+                  "./node_modules/@types"
+                ],
+                "importHelpers": false
+              },
+              "include": [
+                "./**/*"
+              ],
+              "exclude": [
+                "node_modules",
+                ".dependencies",
+                "dist"
+              ]
+            },
+            "development": false,
+            "copyPolicy": {
+              "ignorePatterns": [
+                "package.json",
+                "package-lock.json",
+                "tsconfig.json"
+              ],
+              "disable": false
+            }
+          },
+          "options": {}
+        }
+      },
+      "tester": "bit.envs/testers/mocha@5.0.2"
+    },
+    "overrides": {
+      "dependencies": {
+        "react": "-",
+        "react-dom": "-"
+      },
+      "devDependencies": {
+        "@types/chai": "^4.2.8",
+        "@types/sinon": "^7.5.1",
+        "@types/mocha": "^5.0.0",
+        "chai": "^4.2.0",
+        "sinon": "^8.1.1"
+      }
+    }
+  }
+}

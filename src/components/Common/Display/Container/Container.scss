@@ -1,0 +1,16 @@
+.Container {
+	margin: 0 auto;
+	max-width: 100vw;
+
+	&.size-small {
+		width: 600px;
+	}
+
+	&.size-medium {
+		width: 800px;
+	}
+
+	&.size-large {
+		width: 1300px;
+	}
+}
