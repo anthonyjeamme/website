@@ -51,8 +51,9 @@
 			padding: 0 20px;
 		}
 	}
+
 	.sticky-title {
-		// position: sticky;
+		position: relative;
 		z-index: 3;
 		top: 0;
 		padding: 20px;
@@ -63,9 +64,8 @@
 		pointer-events: none;
 
 		@media (max-width: 800px) {
-			// margin-bottom: 0;
-
-			// height: 52px;
+			margin-bottom: 0;
+			height: auto;
 		}
 
 		h1 {
@@ -82,7 +82,7 @@
 			pointer-events: all;
 
 			@media (max-width: 800px) {
-				// font-size: 26px;
+				font-size: 26px;
 			}
 			// white-space: nowrap;
 

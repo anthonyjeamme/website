@@ -21,7 +21,9 @@ const LayoutHeader: TLayoutHeader = () => {
 	return (
 		<div className="LayoutHeader">
 			<div className="brand">
-				<Link to="/">Anthony JEAMME</Link>
+				<Link to="/">
+					<img src="/images/LOGO.svg" style={{ height: 40 }} />
+				</Link>
 			</div>
 
 			<div className={`title${showNavigation ? ' active' : ''}`}>
@@ -30,6 +32,9 @@ const LayoutHeader: TLayoutHeader = () => {
 			</div>
 
 			<nav className="nav">
+				<Link tabIndex={0} to="/formations">
+					Formations
+				</Link>
 				<Link tabIndex={0} to="/contact">
 					Besoin d'un dev ?
 				</Link>

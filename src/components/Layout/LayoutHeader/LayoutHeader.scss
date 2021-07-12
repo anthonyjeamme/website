@@ -14,6 +14,16 @@
 	justify-content: center;
 
 	@media (max-width: 800px) {
+		justify-content: flex-end;
+	}
+
+	background-image: linear-gradient(
+		to bottom,
+		rgba(black, 0.15),
+		rgba(black, 0)
+	);
+
+	@media (max-width: 800px) {
 		z-index: 5;
 	}
 
@@ -22,6 +32,10 @@
 		display: flex;
 		font-size: 14px;
 		text-transform: uppercase;
+
+		@media (max-width: 800px) {
+			display: none;
+		}
 
 		transition: opacity 200ms, transform 200ms;
 		opacity: 0;
@@ -71,6 +85,7 @@
 		align-items: center;
 		justify-content: center;
 		cursor: pointer;
+		-webkit-tap-highlight-color: transparent;
 
 		display: none;
 

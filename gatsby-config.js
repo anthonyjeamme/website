@@ -40,8 +40,8 @@ module.exports = {
 				start_url: `/`,
 				background_color: `#1c1e26`,
 				theme_color: `#1c1e26`,
-				display: `minimal-ui`,
-				icon: `src/images/gatsby-icon.png`
+				display: `standalone`,
+				icon: `src/images/logo-icon.png`
 			}
 		},
 		{

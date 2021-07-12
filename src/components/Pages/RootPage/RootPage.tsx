@@ -10,7 +10,7 @@ const RootPage: TRootPage = () => {
 			<LayoutHeader />
 
 			<ArticleHeader
-				backgroundColor="#663399"
+				backgroundColor="#7281d3"
 				image="/images/gatsby-banner.svg"
 			/>
 
