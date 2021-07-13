@@ -119,7 +119,7 @@ const ArticleHeader = ({ backgroundColor, image }) => {
 			titleRef.current.style.opacity = '1'
 		}
 
-		if (window.scrollY >= 160) {
+		if (window.scrollY >= 200) {
 			fixedBarRef.current.style.opacity = '1'
 		} else {
 			fixedBarRef.current.style.opacity = '0'

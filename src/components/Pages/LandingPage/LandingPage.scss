@@ -1,0 +1,87 @@
+.LandingPage {
+	display: flex;
+	flex-direction: column;
+	padding: 265px 20px 20px 20px;
+
+	@media (max-width: 800px) {
+		padding-top: 100px;
+	}
+
+	section {
+		margin-bottom: 50px;
+	}
+
+	h1 {
+		margin: 0;
+		font-size: 80px;
+
+		@media (max-width: 2000px) {
+			font-size: 4vw;
+		}
+
+		@media (max-width: 1500px) {
+			font-size: 60px;
+		}
+		@media (max-width: 800px) {
+			font-size: 32px;
+		}
+		@media (max-width: 500px) {
+			font-size: 24px;
+		}
+
+		& > .separator {
+			background: -webkit-linear-gradient(#ff921f, #f44e1c);
+			-webkit-background-clip: text;
+			background-clip: text;
+			-webkit-text-fill-color: transparent;
+			font-weight: 800;
+			transform: scale(1.4);
+			display: inline-block;
+		}
+	}
+
+	h2 {
+		@media (max-width: 800px) {
+			font-size: 20px;
+		}
+	}
+
+	.subtitle {
+		color: rgba(white, 0.6);
+		margin: 0;
+		font-size: 20px;
+		margin-bottom: 40px;
+
+		@media (max-width: 800px) {
+			font-size: 15px;
+			margin-bottom: 20px;
+		}
+	}
+
+	u {
+		white-space: nowrap;
+	}
+
+	p {
+		max-width: 700px;
+
+		@media (max-width: 800px) {
+			font-size: 15px;
+		}
+	}
+
+	& > .container {
+		max-width: 100%;
+		margin: 0 auto;
+		.Button {
+			font-size: 20px;
+			padding: 15px 30px;
+			margin-top: 20px;
+
+			@media (max-width: 800px) {
+				font-size: 15px;
+				padding: 10px 20px;
+			}
+		}
+	}
+}

@@ -1,3 +1,3 @@
-import RootPage from '~components/Pages/RootPage/RootPage'
+import LandingPage from '~components/Pages/LandingPage/LandingPage'
 
-export default RootPage
+export default LandingPage
