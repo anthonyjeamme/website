@@ -21,6 +21,23 @@ body {
 	background-position: center;
 	background-attachment: fixed;
 
+	&:before {
+		content: '';
+		background-color: #7281d3;
+		height: 200vw;
+		width: 200vw;
+		border-radius: 200vw;
+		display: block;
+		position: fixed;
+		top: -120vw;
+		right: -150vw;
+	}
+
+	& > * {
+		position: relative;
+		z-index: 100;
+	}
+
 	@media (max-width: 800px) {
 		font-size: 16px;
 	}
