@@ -103,45 +103,6 @@ const LayoutHeader: TLayoutHeader = () => {
 					setMobileMenuOpen(false)
 				}}
 			/>
-
-			{/* <div className="burger-menu">
-				<Link tabIndex={0} to="/portfolio">
-					<Button
-						handleClick={() => {
-							//
-						}}
-					>
-						Portfolio
-					</Button>
-				</Link>
-				<Link tabIndex={0} to="/formations">
-					<Button
-						handleClick={() => {
-							//
-						}}
-					>
-						Formations
-					</Button>
-				</Link>
-				<Link tabIndex={0} to="/contact">
-					<Button
-						handleClick={() => {
-							//
-						}}
-					>
-						Besoin d'un dev ?
-					</Button>
-				</Link>
-				<Link tabIndex={0} to="/blog">
-					<Button
-						handleClick={() => {
-							//
-						}}
-					>
-						Articles
-					</Button>
-				</Link>
-			</div> */}
 		</div>
 	)
 }
@@ -185,6 +146,29 @@ const MobileSideBar = ({ isOpen, handleClose }) => {
 						Articles
 					</Link>
 				</div>
+				<footer>
+					<div className="social-networks">
+						<a
+							href="https://www.linkedin.com/in/anthonyjeamme/"
+							rel="noopener noreferrer"
+							target="_blank"
+						>
+							<i className="mdi mdi-linkedin" />
+						</a>
+						<a
+							href="https://github.com/anthonyjeamme"
+							rel="noopener noreferrer"
+							target="_blank"
+						>
+							<i className="mdi mdi-github" />
+						</a>
+						<a href="" rel="noopener noreferrer" target="_blank">
+							<i className="mdi mdi-email-outline" />
+						</a>
+					</div>
+
+					<Button theme="orange">Contacter moi</Button>
+				</footer>
 			</nav>
 		</div>
 	)

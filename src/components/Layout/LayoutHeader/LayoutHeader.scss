@@ -181,11 +181,16 @@
 			position: fixed;
 			overflow-y: auto;
 			top: 0;
-			left: 80px;
 			bottom: 0;
 			right: 0;
 			background: white;
+			width: calc(100vw - 80px);
+			max-width: 350px;
 			z-index: 10;
+			display: flex;
+			flex-direction: column;
+			padding-top: 61px;
+
 			* {
 				color: $dark;
 			}
@@ -197,6 +202,7 @@
 			& > .links {
 				display: flex;
 				flex-direction: column;
+				flex: 1;
 
 				& > a {
 					padding: 12px 20px;
@@ -220,19 +226,66 @@
 			.Button {
 				text-decoration: none;
 			}
+
+			& > footer {
+				padding: 20px;
+				display: flex;
+				flex-direction: column;
+
+				& > .social-networks {
+					display: flex;
+					padding-bottom: 16px;
+
+					& > a {
+						height: 40px;
+						width: 40px;
+						border-radius: 40px;
+						border: 0;
+						font-size: 20px;
+						background-color: rgba($dark, 0.05);
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						transition: background-color 200ms;
+
+						-webkit-tap-highlight-color: transparent;
+
+						&:hover {
+							background-color: rgba($dark, 0.2);
+						}
+
+						&:not(:nth-last-child(1)) {
+							margin-right: 8px;
+						}
+					}
+				}
+			}
+
+			.Button {
+				width: 100%;
+				& > span {
+					color: white !important;
+				}
+			}
 		}
 
 		header {
 			display: flex;
 			justify-content: flex-end;
 			padding: 10px 20px 0 20px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
 
 			button.close {
 				padding: 10px;
+				box-sizing: border-box;
 				border: 0;
 				background-color: transparent;
 				font-size: 26px;
 				border-radius: 6px;
+				cursor: pointer;
 
 				&:active {
 					background-color: rgba($dark, 0.1);

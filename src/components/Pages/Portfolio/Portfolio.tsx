@@ -4,7 +4,6 @@ import LayoutHeader from '~components/Layout/LayoutHeader/LayoutHeader'
 import Container from '~Common/Display/Container/Container'
 
 import './Portfolio.scss'
-import { Link } from 'gatsby'
 
 const Portfolio = () => {
 	return (
