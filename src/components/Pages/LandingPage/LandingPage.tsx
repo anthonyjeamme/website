@@ -1,6 +1,6 @@
 import React from 'react'
 import LayoutHeader from '~components/Layout/LayoutHeader/LayoutHeader'
-import Button from '../../Common/Basics/Button/Button'
+import Button from '../../Common/Atoms/Button/Button'
 
 import './LandingPage.scss'
 

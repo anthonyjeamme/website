@@ -99,9 +99,9 @@
 		outline: none;
 		border-radius: 4px;
 		margin: -10px -10px -10px 0;
-		transition: background-color 200ms, box-shadow 200ms, transform 200ms;
+		transition: background-color 150ms, box-shadow 150ms, transform 150ms;
 		box-shadow: inset 0px 0px 0px rgba(white, 0.1),
-			inset 0px 4px 4px rgba($dark, 0), inset 1px 1px 0 rgba($dark, 0);
+			inset 0px 4px 4px rgba($dark, 0), inset 0 1px 0 rgba($dark, 0);
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -115,7 +115,9 @@
 		}
 
 		&:hover {
-			background-color: rgba($dark, 0.05);
+			@media (cursor: pointer) {
+				background-color: rgba($dark, 0.05);
+			}
 		}
 
 		& > span {
@@ -126,7 +128,8 @@
 			background-color: rgba($dark, 0.05);
 
 			box-shadow: inset -1px -1px 0px rgba(white, 0),
-				inset 0 4px 4px rgba($dark, 0.2), inset 1px 1px 0 rgba($dark, 0.1);
+				inset 0 4px 4px rgba($dark, 0.2), inset 0 1px 0 rgba($dark, 0.1),
+				0 1px 0 rgba(white, 0.2), inset 0 1px 1px rgba($dark, 0.05);
 
 			& > span {
 				transform: translateY(2px);
@@ -153,38 +156,115 @@
 				color: white;
 			}
 		}
+	}
 
-		// & > * {
-		// 	display: block;
-		// 	text-decoration: none;
-		// 	cursor: pointer;
-		// 	padding: 10px 20px;
-		// 	background-color: transparent;
-		// 	border-radius: 4px;
-		// 	transition: background-color 200ms, opacity 200ms, box-shadow 200ms;
-		// 	user-select: none;
-		// 	color: rgba(white, 0.8);
-		// 	outline: none;
+	// &::before {
+	// 	content: '';
+	// 	position: fixed;
+	// 	top: 0;
+	// 	left: 0;
+	// 	right: 0;
+	// 	bottom: 0;
+	// 	background-color: rgba($dark, 0.8);
+	// 	z-index: 9;
+	// }
 
-		// 	&:not(:nth-last-child(1)) {
-		// 		margin-right: 10px;
-		// 	}
+	.MobileSideBar {
+		pointer-events: none;
+		overflow: hidden;
 
-		// 	&:hover,
-		// 	&:focus {
-		// 		background-color: rgba(white, 0.03);
-		// 		color: white;
-		// 		box-shadow: inset -1px 0 0 rgba(white, 0.03),
-		// 			inset 1px 0 0 rgba(white, 0.03), inset 0 -1px 0 rgba(white, 0.03);
-		// 	}
+		&.active {
+			pointer-events: all;
+		}
 
-		// 	&:active {
-		// 		background-color: rgba(white, 0.1);
-		// 		color: white;
-		// 		box-shadow: inset -1px 0 0 rgba(white, 0.1),
-		// 			inset 1px 0 0 rgba(white, 0.1), inset 0 -1px 0 rgba(white, 0.1);
-		// 	}
-		// }
+		& > nav {
+			position: fixed;
+			overflow-y: auto;
+			top: 0;
+			left: 80px;
+			bottom: 0;
+			right: 0;
+			background: white;
+			z-index: 10;
+			* {
+				color: $dark;
+			}
+
+			transition: transform 300ms, opacity 300ms;
+			opacity: 0;
+			transform: translateX(80px);
+
+			& > .links {
+				display: flex;
+				flex-direction: column;
+
+				& > a {
+					padding: 12px 20px;
+					text-decoration: none;
+					font-weight: 400;
+					font-size: 15px;
+					-webkit-tap-highlight-color: transparent;
+
+					&:active {
+						background-color: rgba($dark, 0.06);
+					}
+
+					& > .mdi {
+						color: #7281d3;
+						display: inline-block;
+						margin-right: 5px;
+					}
+				}
+			}
+
+			.Button {
+				text-decoration: none;
+			}
+		}
+
+		header {
+			display: flex;
+			justify-content: flex-end;
+			padding: 10px 20px 0 20px;
+
+			button.close {
+				padding: 10px;
+				border: 0;
+				background-color: transparent;
+				font-size: 26px;
+				border-radius: 6px;
+
+				&:active {
+					background-color: rgba($dark, 0.1);
+				}
+			}
+		}
+
+		& > .overlay {
+			content: '';
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba($dark, 0.9);
+			z-index: 9;
+			opacity: 0;
+			transition: opacity 300ms;
+			pointer-events: none;
+		}
+
+		&.active {
+			& > .overlay {
+				opacity: 1;
+				pointer-events: all;
+			}
+
+			& > nav {
+				transform: none;
+				opacity: 1;
+			}
+		}
 	}
 
 	@media (max-width: 800px) {
