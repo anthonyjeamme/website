@@ -7,6 +7,30 @@
 		padding-top: 100px;
 	}
 
+	.profile {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 40px;
+		align-items: center;
+
+		.profile-picture {
+			$size: 140px;
+			margin-bottom: 20px;
+
+			height: $size;
+			width: $size;
+			border-radius: 80px;
+			padding: 10px;
+			background-color: #7281d3;
+
+			& > img {
+				height: $size;
+				width: $size;
+				border-radius: 80px;
+			}
+		}
+	}
+
 	section {
 		margin-bottom: 50px;
 	}

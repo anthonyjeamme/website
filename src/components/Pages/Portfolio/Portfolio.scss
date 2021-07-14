@@ -39,15 +39,29 @@
 			font-weight: 500;
 			display: flex;
 			align-items: flex-start;
+			background-size: cover;
+			background-position: center center;
+			position: relative;
+			border: 3px solid white;
 
 			& > .text {
 				width: 100%;
 				display: flex;
 				justify-content: space-between;
-				align-items: center;
 
-				& > .title {
-					text-transform: uppercase;
+				& > header {
+					padding-top: 6px;
+					& > .title {
+						text-transform: uppercase;
+					}
+
+					& > .description {
+						margin-top: 4px;
+						line-height: 1.1;
+						font-weight: 400;
+						max-width: 230px;
+						opacity: 0.8;
+					}
 				}
 
 				a.visit {
@@ -60,7 +74,8 @@
 					margin-right: -6px;
 
 					&:hover {
-						background: rgba(#222942, 0.1);
+						// background: rgba(#222942, 0.1);
+						text-decoration: underline;
 					}
 				}
 			}

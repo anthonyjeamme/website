@@ -40,11 +40,11 @@ const LayoutHeader: TLayoutHeader = () => {
 			</div>
 
 			<div className={`title${showNavigation ? ' active' : ''}`}>
-				<i className="mdi mdi-home" style={{ marginRight: 8 }} /> Accueil{' '}
+				{/* <i className="mdi mdi-home" style={{ marginRight: 8 }} /> Accueil{' '}
 				<i className="mdi mdi-chevron-right chevron" />{' '}
 				<i className="mdi mdi-post" style={{ marginRight: 8 }} /> Articles{' '}
 				<i className="mdi mdi-chevron-right chevron" /> How to become a Gatsby
-				rockstar
+				rockstar */}
 			</div>
 
 			<nav className="nav">
@@ -57,22 +57,14 @@ const LayoutHeader: TLayoutHeader = () => {
 						Portfolio
 					</Button>
 				</Link>
-				<Link tabIndex={0} to="/formations">
+
+				<Link tabIndex={0} to="/services">
 					<Button
 						handleClick={() => {
 							//
 						}}
 					>
-						Formations
-					</Button>
-				</Link>
-				<Link tabIndex={0} to="/contact">
-					<Button
-						handleClick={() => {
-							//
-						}}
-					>
-						Besoin d'un dev ?
+						Services
 					</Button>
 				</Link>
 				<Link tabIndex={0} to="/blog">
@@ -135,11 +127,8 @@ const MobileSideBar = ({ isOpen, handleClose }) => {
 					<Link tabIndex={0} to="/portfolio" onClick={handleClose}>
 						<i className="mdi mdi-laptop" /> Portfolio
 					</Link>
-					<Link tabIndex={0} to="/formations" onClick={handleClose}>
-						<i className="mdi mdi-wallet-travel" /> Formations
-					</Link>
-					<Link tabIndex={0} to="/contact" onClick={handleClose}>
-						<i className="mdi mdi-account-hard-hat" /> Besoin d'un dev ?
+					<Link tabIndex={0} to="/services" onClick={handleClose}>
+						<i className="mdi mdi-account-hard-hat" /> Services
 					</Link>
 					<Link tabIndex={0} to="/blog" onClick={handleClose}>
 						<i className="mdi mdi-newspaper-variant-multiple-outline" />{' '}

@@ -11,6 +11,14 @@ const LandingPage = () => {
 
 			<div className="container">
 				<section>
+					{/* <div className="profile">
+						<div className="profile-picture">
+							<img src="/images/profile-picture.jpg" />
+						</div>
+
+						<div className="text">Anthony JEAMME</div>
+					</div> */}
+
 					<h1>
 						Développeur React <span className="separator">/</span> Node
 					</h1>
