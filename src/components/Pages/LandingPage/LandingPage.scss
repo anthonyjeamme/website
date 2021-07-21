@@ -10,6 +10,7 @@
 	.IntroSection {
 		display: flex;
 		align-items: center;
+		padding-bottom: 120px;
 
 		@media (max-width: 1200px) {
 			flex-direction: column;
