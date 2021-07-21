@@ -53,25 +53,28 @@
 		}
 
 		.profile-picture {
-			margin-bottom: 20px;
+			margin-bottom: 40px;
 
 			height: 300px;
 			width: 300px;
-			transition: height 300ms, width 300ms;
 
-			border-radius: 100%;
-			padding: 20px;
+			border-radius: 60px;
 			background-color: #7281d3;
+			transform: rotate(20deg);
+			box-shadow: 0 4px 10px rgba(black, 0.15);
+
+			transition: height 300ms, width 300ms, border-radius 300ms;
 
 			@media (max-width: 1500px) {
 				height: 200px;
 				width: 200px;
+				border-radius: 30px;
+				margin-bottom: 40px;
 			}
 
 			@media (max-width: 600px) {
 				height: 150px;
 				width: 150px;
-				padding: 10px;
 			}
 
 			& > img {
@@ -79,13 +82,19 @@
 				width: 100%;
 				border-radius: 40px;
 
+				transform: rotate(-20deg);
+
 				@media (max-width: 1500px) {
-					border-radius: 30px;
+					border-radius: 20px;
 				}
 
 				@media (max-width: 600px) {
-					border-radius: 20px;
+					border-radius: 10px;
 				}
+			}
+
+			& > .text {
+				margin-top: 20px;
 			}
 		}
 	}

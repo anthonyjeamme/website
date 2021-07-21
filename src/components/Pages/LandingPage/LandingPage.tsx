@@ -48,7 +48,7 @@ const LandingPage = () => {
 						</p>
 
 						<p>
-							Développeur React indépendant depuis plus de quatre ans et
+							Développeur React indépendant à Lyon depuis plus de quatre ans et
 							passionné de frontend depuis toujours, j'apporte une attention
 							particulière à développer des applications <u>fiables</u>,{' '}
 							<u>scalables</u> et <u>faciles à utiliser</u>.
