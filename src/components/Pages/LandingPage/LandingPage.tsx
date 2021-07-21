@@ -19,11 +19,25 @@ const LandingPage = () => {
 						</div>
 
 						<div className="text">ANTHONY JEAMME</div>
-						{/* <div className="socials">
-							<a href="">
+						<div className="socials">
+							<a
+								href="https://www.linkedin.com/in/anthonyjeamme/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								<i className="mdi mdi-linkedin" />
+							</a>
+							<a
+								href="https://github.com/anthonyjeamme"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								<i className="mdi mdi-github" />
 							</a>
-						</div> */}
+							<a href="mailto:anthony@jeamme.fr">
+								<i className="mdi mdi-email-outline" />
+							</a>
+						</div>
 					</div>
 					<div>
 						<h1>

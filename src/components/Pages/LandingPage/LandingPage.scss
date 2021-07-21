@@ -10,39 +10,68 @@
 	.IntroSection {
 		display: flex;
 		align-items: center;
-		& > :nth-child(1) {
-			margin-right: 80px;
+
+		@media (max-width: 1200px) {
+			flex-direction: column;
 		}
 	}
 
 	.profile {
-		$size: 300px;
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 40px;
 		align-items: center;
 		right: 100%;
-		font-weight: 800;
+		font-weight: 500;
 		letter-spacing: 4px;
+		margin-right: 80px;
+		transition: margin-right 300ms;
+		font-size: 18px;
 
-		// .socials {
-		// 	margin-top: 10px;
+		@media (max-width: 1500px) {
+			margin-right: 60px;
+		}
 
-		// }
+		.socials {
+			margin-top: 10px;
+			display: flex;
+			gap: 10px;
+
+			& > a {
+				font-size: 30px;
+
+				transition: color 200ms;
+
+				&:hover {
+					color: #7281d3;
+				}
+			}
+		}
 
 		.profile-picture {
 			margin-bottom: 20px;
 
-			height: $size;
-			width: $size;
-			border-radius: $size;
+			height: 300px;
+			width: 300px;
+			transition: height 300ms, width 300ms;
+
+			border-radius: 100%;
 			padding: 20px;
 			background-color: #7281d3;
 
+			@media (max-width: 1500px) {
+				height: 200px;
+				width: 200px;
+			}
+
 			& > img {
-				height: $size;
-				width: $size;
+				height: 100%;
+				width: 100%;
 				border-radius: 40px;
+
+				@media (max-width: 1500px) {
+					border-radius: 30px;
+				}
 			}
 		}
 	}
