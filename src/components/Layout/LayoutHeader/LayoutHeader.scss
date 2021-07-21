@@ -12,10 +12,11 @@
 	z-index: 5;
 	align-items: center;
 	justify-content: center;
-	transition: background-color 200ms;
+	transition: background-color 300ms, box-shadow 300ms;
 
 	&.background {
 		background-color: #7281d3;
+		box-shadow: 0 0 30px rgba(black, 0.1);
 	}
 
 	@media (max-width: 800px) {

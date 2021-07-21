@@ -37,7 +37,7 @@ const Portfolio = () => {
 							link: 'https://www.indikasolutions.com/',
 							description: 'Site web • Courtier en assurances',
 							image:
-								'https://res.cloudinary.com/anthony-jeamme-stuff/image/upload/v1626274699/misc/indika-solutions-portfolio.png',
+								'https://res.cloudinary.com/anthony-jeamme-stuff/image/upload/v1626281020/site%20perso/portfolio/indika.png',
 							textColor: 'white'
 						}}
 					/>
@@ -46,15 +46,15 @@ const Portfolio = () => {
 							textColor: 'white',
 							title: 'tressalia',
 							link: 'https://tressalia.fr/',
-							description: 'Site web • Bar à tresse',
+							description: 'Site web • Bar à tresses',
 							image:
-								'https://res.cloudinary.com/dwynqcim6/image/upload/w_800,q_auto/v1598470354/LandingPage/bar-a-tresses-africaines-lyon-tressalia_w28avj'
+								'https://res.cloudinary.com/anthony-jeamme-stuff/image/upload/v1626281377/site%20perso/portfolio/tressalia.png'
 						}}
 					/>
 					<PortfolioItem
 						data={{
 							image:
-								'https://res.cloudinary.com/anthony-jeamme-stuff/image/upload/v1626273257/libraries/rocket-useform/rocket-useform-portfolio.svg',
+								'https://res.cloudinary.com/anthony-jeamme-stuff/image/upload/v1626280748/site%20perso/portfolio/rocket-useform.svg',
 							title: 'rocket-useform',
 							description: `Librairie React`,
 							link: 'https://github.com/anthonyjeamme/rocket-useform'

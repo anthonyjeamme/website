@@ -7,32 +7,49 @@
 		padding-top: 100px;
 	}
 
+	.IntroSection {
+		display: flex;
+		align-items: center;
+		& > :nth-child(1) {
+			margin-right: 80px;
+		}
+	}
+
 	.profile {
+		$size: 300px;
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 40px;
 		align-items: center;
+		right: 100%;
+		font-weight: 800;
+		letter-spacing: 4px;
+
+		// .socials {
+		// 	margin-top: 10px;
+
+		// }
 
 		.profile-picture {
-			$size: 140px;
 			margin-bottom: 20px;
 
 			height: $size;
 			width: $size;
-			border-radius: 80px;
-			padding: 10px;
+			border-radius: $size;
+			padding: 20px;
 			background-color: #7281d3;
 
 			& > img {
 				height: $size;
 				width: $size;
-				border-radius: 80px;
+				border-radius: 40px;
 			}
 		}
 	}
 
 	section {
 		margin-bottom: 50px;
+		position: relative;
 	}
 
 	h1 {
