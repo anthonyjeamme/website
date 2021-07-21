@@ -52,7 +52,12 @@ module.exports = {
 			}
 		},
 		`gatsby-plugin-gatsby-cloud`,
-		`gatsby-plugin-sass`,
+		{
+			resolve: `gatsby-plugin-sass`,
+			options: {
+				ignoreOrder: true
+			}
+		},
 		`gatsby-plugin-offline`
 	]
 }
