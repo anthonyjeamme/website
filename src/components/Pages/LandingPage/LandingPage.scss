@@ -71,6 +71,7 @@
 			@media (max-width: 600px) {
 				height: 150px;
 				width: 150px;
+				padding: 10px;
 			}
 
 			& > img {
@@ -80,6 +81,10 @@
 
 				@media (max-width: 1500px) {
 					border-radius: 30px;
+				}
+
+				@media (max-width: 600px) {
+					border-radius: 20px;
 				}
 			}
 		}
