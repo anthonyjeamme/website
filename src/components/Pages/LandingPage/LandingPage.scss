@@ -25,7 +25,6 @@
 		font-weight: 500;
 		letter-spacing: 4px;
 		margin-right: 80px;
-		transition: margin-right 300ms;
 		font-size: 18px;
 
 		@media (max-width: 1500px) {
@@ -60,16 +59,21 @@
 
 			border-radius: 60px;
 			background-color: #7281d3;
-			transform: rotate(20deg);
+			transform: rotate(-20deg);
 			box-shadow: 0 4px 10px rgba(black, 0.15);
 
 			transition: height 300ms, width 300ms, border-radius 300ms;
 
 			@media (max-width: 1500px) {
-				height: 200px;
-				width: 200px;
+				height: 250px;
+				width: 250px;
 				border-radius: 30px;
 				margin-bottom: 40px;
+			}
+
+			@media (max-width: 800px) {
+				height: 200px;
+				width: 200px;
 			}
 
 			@media (max-width: 600px) {
@@ -82,7 +86,7 @@
 				width: 100%;
 				border-radius: 40px;
 
-				transform: rotate(-20deg);
+				transform: rotate(20deg);
 
 				@media (max-width: 1500px) {
 					border-radius: 20px;
