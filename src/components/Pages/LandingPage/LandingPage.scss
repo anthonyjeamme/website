@@ -32,6 +32,10 @@
 			margin-right: 60px;
 		}
 
+		@media (max-width: 1200px) {
+			margin-right: 0;
+		}
+
 		.socials {
 			margin-top: 10px;
 			display: flex;
