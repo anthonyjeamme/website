@@ -10,27 +10,52 @@ const TechnologySection = () => {
 			<p></p>
 
 			<div className="technologies">
-				<TechnologyItem>React</TechnologyItem>
+				<h3>Frameworks</h3>
+
 				<TechnologyItem>Gatsby</TechnologyItem>
 				<TechnologyItem>NextJS</TechnologyItem>
+
+				<h3>Style</h3>
+
 				<TechnologyItem>SCSS</TechnologyItem>
 				<TechnologyItem>Styled components</TechnologyItem>
-				<TechnologyItem>Développement d'extension VSCode</TechnologyItem>
-				<TechnologyItem>NodeJS / Express</TechnologyItem>
-				<TechnologyItem>Automatisation</TechnologyItem>
-				<TechnologyItem>Services : Sendinblue, Cloudinary</TechnologyItem>
-				<TechnologyItem>Netlify</TechnologyItem>
+
+				<h4>Tests</h4>
 				<TechnologyItem>StoryBook</TechnologyItem>
 				<TechnologyItem>Jest</TechnologyItem>
-				<TechnologyItem>Git</TechnologyItem>
-				<TechnologyItem>React</TechnologyItem>
+
+				<h4>Organisation</h4>
+
 				<TechnologyItem>
 					Configuration : Webpack / eslint / prettier
 				</TechnologyItem>
 				<TechnologyItem>CI / CD</TechnologyItem>
+				<TechnologyItem>Git</TechnologyItem>
+
+				<h4>Services</h4>
+
+				<TechnologyItem>Netlify</TechnologyItem>
+				<TechnologyItem>Sendinblue</TechnologyItem>
+				<TechnologyItem>Cloudinary</TechnologyItem>
+				<TechnologyItem>Lambda functions</TechnologyItem>
+
+				<h3>Backend</h3>
+
+				<TechnologyItem>NodeJS</TechnologyItem>
+				<TechnologyItem>Express</TechnologyItem>
+
+				<h3>Base de données</h3>
+
+				<TechnologyItem>Mongodb</TechnologyItem>
+				<TechnologyItem>Firestore</TechnologyItem>
+				<TechnologyItem>GraphQL (apollo)</TechnologyItem>
+
+				<h3>Divers</h3>
+
+				<TechnologyItem>Automatisation</TechnologyItem>
+				<TechnologyItem>Développement d'extension VSCode</TechnologyItem>
 				<TechnologyItem>Développement de librairies</TechnologyItem>
 				<TechnologyItem>Webscrapping (pupeteer)</TechnologyItem>
-				<TechnologyItem>GraphQL (apollo)</TechnologyItem>
 			</div>
 		</section>
 	)
