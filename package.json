@@ -1,7 +1,7 @@
 {
-	"name": "anthony-jeamme-gatsby-starter",
+	"name": "anthony-jeamme-website",
 	"private": true,
-	"description": "My personal gatsby starter kit",
+	"description": "anthony jeamme - site personnel",
 	"version": "0.1.0",
 	"author": "Anthony JEAMME <anthony@jeamme.fr>",
 	"dependencies": {

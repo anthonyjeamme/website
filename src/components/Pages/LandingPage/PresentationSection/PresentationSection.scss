@@ -1,0 +1,61 @@
+.PresentationSection {
+	padding: 0 20px;
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+	@keyframes fadeInDown {
+		from {
+			opacity: 0;
+			transform: translateY(-10px);
+		}
+		to {
+			opacity: 1;
+			transform: none;
+		}
+	}
+
+	@keyframes fadeInLeft {
+		from {
+			opacity: 0;
+			transform: translateX(20px);
+		}
+		to {
+			opacity: 1;
+			transform: none;
+		}
+	}
+
+	h1 {
+		animation: fadeInDown 400ms;
+	}
+
+	.subtitle {
+		animation: fadeInDown 400ms 100ms;
+		animation-fill-mode: backwards;
+	}
+
+	p {
+		animation: fadeInDown 400ms 200ms;
+		animation-fill-mode: backwards;
+	}
+
+	.Button {
+		animation: fadeInDown 400ms 300ms;
+		animation-fill-mode: backwards;
+	}
+
+	.profile {
+		animation: fadeInLeft 400ms 400ms;
+		animation-fill-mode: backwards;
+
+		@media (max-width: 1200px) {
+			animation: fadeInDown 400ms 0;
+		}
+	}
+}

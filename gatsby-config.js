@@ -16,8 +16,8 @@ const getGatsbyPluginAliases = () => {
 
 module.exports = {
 	siteMetadata: {
-		title: `Gatsby Starter`,
-		description: `Anthony Jeamme personnal starter kit`,
+		title: `Anthony JEAMME - Développeur React / Node`,
+		description: `Site personnel - Anthony JEAMME - Développeur React et Node indépendant à Lyon`,
 		author: `@anthonyjeamme`
 	},
 	plugins: [
