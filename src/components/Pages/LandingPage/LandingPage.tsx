@@ -8,19 +8,22 @@ import './LandingPage.scss'
 
 const LandingPage = () => {
 	return (
-		<div className="LandingPage">
-			<LayoutHeader />
+		<>
+			<img src="/images/wave.svg" className="wave" />
+			<div className="LandingPage">
+				<LayoutHeader />
 
-			<PresentationSection />
+				<PresentationSection />
 
-			<TechnologySection />
+				<TechnologySection />
 
-			<div className="container">
-				<section>
-					<h2>Pricing</h2>
-				</section>
+				<div className="container">
+					<section>
+						<h2>Pricing</h2>
+					</section>
+				</div>
 			</div>
-		</div>
+		</>
 	)
 }
 
