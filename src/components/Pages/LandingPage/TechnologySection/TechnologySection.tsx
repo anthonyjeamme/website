@@ -9,6 +9,14 @@ const TechnologySection = () => {
 		<section className="TechnologySection">
 			<Container size="large">
 				<h2>Technologies</h2>
+				<img src="/images/icons/netlify.png" style={{ height: 100 }} />
+				<img src="/images/icons/gatsby.png" style={{ height: 100 }} />
+				<img src="/images/icons/git.png" style={{ height: 100 }} />
+				<img src="/images/icons/graphql.png" style={{ height: 100 }} />
+				<img src="/images/icons/ts.png" style={{ height: 100 }} />
+				<img src="/images/icons/nodejs.png" style={{ height: 100 }} />
+				<img src="/images/icons/sass.png" style={{ height: 100 }} />
+				<img src="/images/icons/vscode.png" style={{ height: 100 }} />
 
 				<div className="technologies">
 					<h3>Frameworks</h3>
