@@ -1,11 +1,7 @@
 .LandingPage {
 	display: flex;
 	flex-direction: column;
-	padding: 265px 0 800px 0;
-
-	@media (max-width: 800px) {
-		padding-top: 100px;
-	}
+	padding: 0 0 200px 0;
 
 	.IntroSection {
 		display: flex;
@@ -173,15 +169,5 @@
 	& > .container {
 		max-width: 100%;
 		margin: 0 auto;
-		.Button {
-			font-size: 20px;
-			padding: 15px 30px;
-			margin-top: 20px;
-
-			@media (max-width: 800px) {
-				font-size: 15px;
-				padding: 10px 20px;
-			}
-		}
 	}
 }

@@ -1,5 +1,35 @@
 .PresentationSection {
-	padding: 0 20px;
+	padding: 265px 20px 20px 20px;
+	// background: #7281d3;
+	display: flex;
+	background-image: linear-gradient(
+		to bottom,
+		#7281d3 320px,
+		transparent 320px
+	);
+
+	@media (max-width: 800px) {
+		padding-top: 100px;
+
+		background-image: linear-gradient(
+			to bottom,
+			#7281d3 200px,
+			transparent 200px
+		);
+	}
+
+	@media (max-width: 600px) {
+		background-image: linear-gradient(
+			to bottom,
+			#7281d3 170px,
+			transparent 170px
+		);
+	}
+
+	& > .container {
+		max-width: 100%;
+		margin: 0 auto;
+	}
 
 	@keyframes fadeIn {
 		from {
@@ -56,6 +86,17 @@
 
 		@media (max-width: 1200px) {
 			animation: fadeInDown 400ms 0;
+		}
+	}
+
+	.Button {
+		font-size: 20px;
+		padding: 15px 30px;
+		margin-top: 20px;
+
+		@media (max-width: 800px) {
+			font-size: 15px;
+			padding: 10px 20px;
 		}
 	}
 }

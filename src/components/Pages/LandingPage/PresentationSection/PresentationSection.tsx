@@ -5,8 +5,8 @@ import './PresentationSection.scss'
 
 const PresentationSection = () => {
 	return (
-		<div className="PresentationSection container">
-			<div>
+		<div className="PresentationSection">
+			<div className="container">
 				<section className="IntroSection">
 					<div className="profile">
 						<div className="profile-picture">

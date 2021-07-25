@@ -19,8 +19,8 @@ const LandingPage = () => {
 				<PresentationSection />
 
 				<Container size="large">
-					<ProjectsSection />
 					<SkillsSection />
+					<ProjectsSection />
 				</Container>
 			</div>
 		</>
