@@ -48,7 +48,7 @@ const LayoutHeader: TLayoutHeader = () => {
 			</div>
 
 			<nav className="nav">
-				<Link tabIndex={0} to="/portfolio">
+				{/* <Link tabIndex={0} to="/portfolio">
 					<Button
 						handleClick={() => {
 							//
@@ -75,7 +75,7 @@ const LayoutHeader: TLayoutHeader = () => {
 					>
 						Articles
 					</Button>
-				</Link>
+				</Link> */}
 			</nav>
 
 			<button
@@ -124,7 +124,7 @@ const MobileSideBar = ({ isOpen, handleClose }) => {
 					</button>
 				</header>
 				<div className="links">
-					<Link tabIndex={0} to="/portfolio" onClick={handleClose}>
+					{/* <Link tabIndex={0} to="/portfolio" onClick={handleClose}>
 						<i className="mdi mdi-laptop" /> Portfolio
 					</Link>
 					<Link tabIndex={0} to="/services" onClick={handleClose}>
@@ -133,7 +133,7 @@ const MobileSideBar = ({ isOpen, handleClose }) => {
 					<Link tabIndex={0} to="/blog" onClick={handleClose}>
 						<i className="mdi mdi-newspaper-variant-multiple-outline" />{' '}
 						Articles
-					</Link>
+					</Link> */}
 				</div>
 				<footer>
 					<div className="social-networks">
