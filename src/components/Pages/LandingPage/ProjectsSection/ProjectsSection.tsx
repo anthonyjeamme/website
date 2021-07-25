@@ -11,10 +11,29 @@ const ProjectsSection = () => {
 
 			<div className="projects">
 				<ProjectItem
-					image="https://res.cloudinary.com/anthony-jeamme-stuff/image/upload/v1617360807/sample.jpg"
 					title="coq-trotteur"
-					description="aze"
+					description={
+						<span>
+							Plateforme de E-Commerce
+							<br /> Mon rôle : CTO / concepteur developpeur
+						</span>
+					}
 					link="https://coq-trotteur.com/fr/paysaptluberon"
+				/>
+				<ProjectItem
+					title="Tressalia"
+					description="Site web pour un Bar à tresses"
+					link="https://tressalia.fr"
+				/>
+				<ProjectItem
+					title="rocket-useform"
+					description="Librairie React pour faciliter la création de formulaire complexes"
+					link="https://github.com/anthonyjeamme/rocket-useform"
+				/>
+				<ProjectItem
+					title="indika-solution (en cours)"
+					description="Site web • Courtier en assurances"
+					link="https://www.indikasolutions.com/"
 				/>
 			</div>
 		</div>

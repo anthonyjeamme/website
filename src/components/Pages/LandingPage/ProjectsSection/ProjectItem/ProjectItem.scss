@@ -1,3 +1,45 @@
 .ProjectItem {
+	display: flex;
+	font-size: 16px;
 
+	& > .image {
+		display: flex;
+
+		height: 160px;
+		width: 200px;
+		background-color: #ecf0f8;
+		border-radius: 10px;
+
+		& > img {
+			height: 160px;
+			width: 200px;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+		margin-right: 24px;
+	}
+
+	& > .content {
+		display: flex;
+		flex-direction: column;
+		padding: 10px 0;
+
+		& > h3 {
+			margin: 0 0 6px 0;
+			text-transform: uppercase;
+			font-weight: 400;
+		}
+
+		& > .description {
+			margin: 0;
+			flex: 1;
+			color: rgba(white, 0.7);
+		}
+
+		& > .links {
+			& > a {
+				text-decoration: underline;
+			}
+		}
+	}
 }
