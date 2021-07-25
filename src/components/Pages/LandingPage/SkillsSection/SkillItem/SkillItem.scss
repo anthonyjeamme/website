@@ -1,0 +1,109 @@
+.SkillItem {
+	font-size: 18px;
+	color: rgba(white, 0.8);
+
+	& > header {
+		display: flex;
+		align-items: center;
+		padding: 10px;
+		transition: background-color 200ms;
+		border-radius: 4px;
+		margin-left: -10px;
+		user-select: none;
+		position: relative;
+
+		& > .name {
+			margin-right: 10px;
+			display: block;
+			width: 120px;
+
+			& > .star {
+				position: absolute;
+				left: -26px;
+				top: 0;
+				bottom: 0;
+				display: flex;
+				align-items: center;
+
+				@media (max-width: 1400px) {
+					position: relative;
+					left: 0;
+					margin-right: 8px;
+					display: inline-block;
+				}
+			}
+		}
+
+		& > .progress {
+			flex: 1;
+			height: 10px;
+			border-radius: 10px;
+			background-color: #ecf0f8;
+			display: block;
+			position: relative;
+			overflow: hidden;
+
+			& > .value {
+				height: 10px;
+				border-radius: 0 10px 10px 0;
+				background-color: #7281d3;
+				display: block;
+
+				@keyframes valueEntry {
+					from {
+						transform: scaleX(0);
+					}
+					to {
+						transform: scaleX(1);
+					}
+				}
+
+				animation: valueEntry 500ms;
+				transform-origin: left;
+			}
+		}
+
+		& > .caret {
+			margin-left: 15px;
+			transition: transform 300ms;
+			display: flex;
+			align-items: center;
+			width: 8px;
+			opacity: 0;
+		}
+	}
+
+	&.expandable {
+		& > header {
+			cursor: pointer;
+			&:hover {
+				background-color: rgba(#ecf0f8, 0.1);
+			}
+
+			& > .caret {
+				opacity: 1;
+			}
+		}
+	}
+
+	& > .expanded {
+		transition: height 300ms;
+		overflow: hidden;
+
+		& > .description {
+			font-size: 16px;
+			color: rgba(white, 0.7);
+			margin: 10px 20px;
+			padding-left: 20px;
+			border-left: 2px solid rgba(white, 0.4);
+		}
+	}
+
+	&.active {
+		& > header {
+			& > .caret {
+				transform: rotate(180deg);
+			}
+		}
+	}
+}

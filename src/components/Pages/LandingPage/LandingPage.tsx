@@ -1,27 +1,27 @@
 import React from 'react'
 import LayoutHeader from '~components/Layout/LayoutHeader/LayoutHeader'
 
+import Container from '~Common/Display/Container/Container'
+
 import PresentationSection from './PresentationSection/PresentationSection'
-import TechnologySection from './TechnologySection/TechnologySection'
+
+import ProjectsSection from './ProjectsSection/ProjectsSection'
+import SkillsSection from './SkillsSection/SkillsSection'
 
 import './LandingPage.scss'
 
 const LandingPage = () => {
 	return (
 		<>
-			<img src="/images/wave.svg" className="wave" />
 			<div className="LandingPage">
 				<LayoutHeader />
 
 				<PresentationSection />
 
-				<TechnologySection />
-
-				<div className="container">
-					<section>
-						<h2>Pricing</h2>
-					</section>
-				</div>
+				<Container size="large">
+					<ProjectsSection />
+					<SkillsSection />
+				</Container>
 			</div>
 		</>
 	)

@@ -8,16 +8,29 @@ const TechnologySection = () => {
 	return (
 		<section className="TechnologySection">
 			<Container size="large">
-				<h2>Technologies</h2>
-				<img src="/images/icons/netlify.png" style={{ height: 100 }} />
+				<h2>Stack</h2>
+				{/* <img src="/images/icons/netlify.png" style={{ height: 100 }} />
 				<img src="/images/icons/gatsby.png" style={{ height: 100 }} />
 				<img src="/images/icons/git.png" style={{ height: 100 }} />
 				<img src="/images/icons/graphql.png" style={{ height: 100 }} />
 				<img src="/images/icons/ts.png" style={{ height: 100 }} />
 				<img src="/images/icons/nodejs.png" style={{ height: 100 }} />
 				<img src="/images/icons/sass.png" style={{ height: 100 }} />
-				<img src="/images/icons/vscode.png" style={{ height: 100 }} />
+				<img src="/images/icons/vscode.png" style={{ height: 100 }} /> */}
+			</Container>
 
+			{/* <div
+				style={{
+					padding: 40,
+					background: 'white',
+					display: 'flex',
+					justifyContent: 'center'
+				}}
+			>
+				<img src="/images/icons/boule.svg" style={{ height: 300 }} />
+			</div> */}
+
+			<Container size="large">
 				<div className="technologies">
 					<h3>Frameworks</h3>
 

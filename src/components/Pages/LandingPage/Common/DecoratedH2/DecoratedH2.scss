@@ -1,0 +1,25 @@
+.DecoratedH2 {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 20px;
+
+	&::before {
+		content: '';
+		background-color: rgba(#7281d3, 0.4);
+		border-radius: 10px;
+		display: block;
+		position: absolute;
+		height: 8px;
+		left: -1000px;
+		right: -10px;
+		bottom: 4px;
+
+		@media (max-width: 800px) {
+			height: 4px;
+		}
+	}
+
+	& > span {
+		position: relative;
+	}
+}
