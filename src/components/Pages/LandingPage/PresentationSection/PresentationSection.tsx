@@ -49,21 +49,28 @@ const PresentationSection = () => {
 							<u>scalables</u> et <u>faciles à utiliser</u>.
 						</p>
 
-						<p>
+						<p>Je ne suis actuellement pas disponible pour des missions.</p>
+
+						{/* <p>
 							Je vous aide à mettre en place et développer votre projet. Je mets
 							en place des bonnes pratiques : structure du projet, travail
 							d'équipe, choix technologiques adaptés en fonction de vos besoins.
-						</p>
+						</p> */}
 
-						<Button
-							handleClick={() => {
-								//
-							}}
-							theme="orange"
+						<a
+							href="https://www.linkedin.com/in/anthonyjeamme/"
+							target="_blank"
+							rel="noopener noreferrer"
 						>
-							<i className="mdi mdi-chat-processing" /> Discutons de votre
-							projet
-						</Button>
+							<Button
+								handleClick={() => {
+									//
+								}}
+								theme="orange"
+							>
+								<i className="mdi mdi-chat-processing" /> Me contacter
+							</Button>
+						</a>
 					</div>
 				</section>
 			</div>

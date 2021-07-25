@@ -22,11 +22,7 @@ const SkillsSection = () => {
 					/>
 					<SkillItem level={10} star name="React" />
 					<SkillItem level={9} star name="Gatsby" />
-					<SkillItem
-						level={5}
-						name="NextJS"
-						description={<span>Blabla</span>}
-					/>
+					<SkillItem level={5} name="NextJS" />
 				</SkillGroup>
 
 				<SkillGroup title="Frontend">
