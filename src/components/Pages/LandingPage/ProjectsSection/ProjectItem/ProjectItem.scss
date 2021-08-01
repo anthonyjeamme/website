@@ -2,8 +2,17 @@
 	display: flex;
 	font-size: 16px;
 
+	
+	@media (max-width: 500px) {
+		flex-direction: column;
+	}
+
 	& > .image {
 		display: flex;
+		
+		@media (max-width: 500px) {
+			margin-bottom: 10px;
+		}
 
 		height: 160px;
 		width: 200px;
@@ -16,13 +25,21 @@
 			object-fit: cover;
 			border-radius: 10px;
 		}
+
 		margin-right: 24px;
+
+	
 	}
 
 	& > .content {
 		display: flex;
 		flex-direction: column;
 		padding: 10px 0;
+
+		
+		@media (max-width: 500px) {
+			padding: 0;
+		}
 
 		& > h3 {
 			margin: 0 0 6px 0;

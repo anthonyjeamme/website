@@ -1,6 +1,12 @@
 .SkillsSection {
 	padding-bottom: 170px;
 
+	
+	@media (max-width: 800px) {
+
+		padding-bottom: 40px;
+	}
+
 	& > .groups {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
