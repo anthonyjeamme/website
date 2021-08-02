@@ -12,6 +12,8 @@
 		user-select: none;
 		position: relative;
 
+		-webkit-tap-highlight-color: transparent;
+
 		& > .name {
 			margin-right: 10px;
 			display: block;
@@ -76,8 +78,9 @@
 	&.expandable {
 		& > header {
 			cursor: pointer;
+
 			&:hover {
-				background-color: rgba(#ecf0f8, 0.1);
+				background-color: rgba(#ecf0f8, 0.05);
 			}
 
 			& > .caret {
@@ -101,6 +104,9 @@
 
 	&.active {
 		& > header {
+			
+			background-color: rgba(#ecf0f8, 0.1) !important;
+
 			& > .caret {
 				transform: rotate(180deg);
 			}

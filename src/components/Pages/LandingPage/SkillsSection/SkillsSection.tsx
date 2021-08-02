@@ -13,7 +13,7 @@ const SkillsSection = () => {
 
 			<div className="groups">
 				<SkillGroup title="Générales">
-					<SkillItem level={10} star name="Javascript" />
+					<SkillItem level={10} star name="Javascript" description="Bonne maîtrise de Javascript et de son écosystème (webpack, node)" />
 					<SkillItem
 						level={10}
 						star
