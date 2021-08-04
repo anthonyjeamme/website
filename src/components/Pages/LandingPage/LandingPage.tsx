@@ -7,6 +7,7 @@ import PresentationSection from './PresentationSection/PresentationSection'
 
 import ProjectsSection from './ProjectsSection/ProjectsSection'
 import SkillsSection from './SkillsSection/SkillsSection'
+import FunSection from './FunSection/FunSection'
 
 import './LandingPage.scss'
 
@@ -21,6 +22,7 @@ const LandingPage = () => {
 				<Container size="large">
 					<SkillsSection />
 					<ProjectsSection />
+					<FunSection />
 				</Container>
 			</div>
 		</>

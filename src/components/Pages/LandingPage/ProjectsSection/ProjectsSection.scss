@@ -1,4 +1,10 @@
 .ProjectsSection {
+	padding-bottom: 170px;
+
+	@media (max-width: 800px) {
+		padding-bottom: 80px;
+	}
+
 	& > .projects {
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
