@@ -34,7 +34,7 @@ export default function HTML(props) {
 							'anonymize_ip': true,
 							'cookie_expires' : 395 * 24 * 60 * 60,
 							'send_page_view': false
-						} });
+						});
 					`
 					}}
 				/>
