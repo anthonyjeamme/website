@@ -19,6 +19,25 @@ export default function HTML(props) {
 					crossOrigin="anonymous"
 				/>
 
+				<script
+					async
+					src="https://www.googletagmanager.com/gtag/js?id=G-GCL4V7Z8LC"
+				></script>
+				<script
+					dangerouslySetInnerHTML={{
+						__html: `
+						window.dataLayer = window.dataLayer || [];
+						function gtag(){dataLayer.push(arguments);}
+						gtag('js', new Date());
+
+						gtag('config', 'G-GCL4V7Z8LC', {
+							'anonymize_ip': true
+							'cookie_expires' : 395 * 24 * 60 * 60
+						} });
+					`
+					}}
+				/>
+
 				{props.headComponents}
 			</head>
 			<body {...props.bodyAttributes}>

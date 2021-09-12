@@ -70,12 +70,12 @@ module.exports = {
 			}
 		],
 		'no-mixed-spaces-and-tabs': 0,
-		'no-console': [
-			2,
-			{
-				allow: ['warn', 'error']
-			}
-		],
+		// 'no-console': [
+		// 	2,
+		// 	{
+		// 		allow: ['warn', 'error']
+		// 	}
+		// ],
 		'no-var': 'error',
 		semi: 0,
 		indent: [0],
@@ -107,7 +107,8 @@ module.exports = {
 		],
 		'jest/prefer-strict-equal': 'off',
 		'jest/prefer-expect-assertions': 'off',
-		'jest/no-hooks': 'off'
+		'jest/no-hooks': 'off',
+		'no-console': 'off'
 	},
 	settings: {
 		react: {
