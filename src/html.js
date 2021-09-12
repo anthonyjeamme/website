@@ -31,8 +31,9 @@ export default function HTML(props) {
 						gtag('js', new Date());
 
 						gtag('config', 'G-GCL4V7Z8LC', {
-							'anonymize_ip': true
-							'cookie_expires' : 395 * 24 * 60 * 60
+							'anonymize_ip': true,
+							'cookie_expires' : 395 * 24 * 60 * 60,
+							'send_page_view': false
 						} });
 					`
 					}}
