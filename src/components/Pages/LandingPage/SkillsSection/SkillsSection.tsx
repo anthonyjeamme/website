@@ -15,6 +15,35 @@ const SkillsSection = () => {
 
 			<div className="groups">
 				<SkillGroup>
+					<SkillItem
+						level={7}
+						star
+						name="Architecture de projet"
+						description={`Conception de l'architecture du projet, bonnes pratiques de nommage / hierarchie des fichiers.`}
+					/>
+
+					<SkillItem
+						level={7}
+						star
+						name="Outils de fiabilisation"
+						description={`J'utilise habituellement Sentry.io pour suivre les erreurs.`}
+					/>
+
+					<SkillItem
+						level={5}
+						star
+						name="Optimisation"
+						description={`J'utilise essentiellement Google Lighthouse, React dev tool et le coverage du devtool chrome pour détecter les problèmes de performance.`}
+					/>
+
+					<SkillItem
+						level={7}
+						star
+						name="Google Analytics 4"
+						description={`Mise en place de Google analytics complexes (multiples tracking code),
+						maîtrise des évenements par défaut (e-commerce) + création de custom events / dimensions / metrics`}
+					/>
+
 					<SkillItem level={10} star name="React" />
 					<SkillItem level={9} star name="Gatsby" />
 					<SkillItem

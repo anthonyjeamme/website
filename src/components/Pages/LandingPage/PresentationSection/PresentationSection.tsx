@@ -58,16 +58,16 @@ const PresentationSection = () => {
 						</p> */}
 
 						<a
-							href="https://www.linkedin.com/in/anthonyjeamme/"
+							// href="https://www.linkedin.com/in/anthonyjeamme/"
 							target="_blank"
 							rel="noopener noreferrer"
+							onClick={() => {
+								// @ts-ignore
+								window.gtag('event', 'click_contact', {})
+								console.log('ICI')
+							}}
 						>
-							<Button
-								handleClick={() => {
-									//
-								}}
-								theme="orange"
-							>
+							<Button theme="orange">
 								<i className="mdi mdi-chat-processing" /> Me contacter
 							</Button>
 						</a>

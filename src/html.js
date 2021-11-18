@@ -21,7 +21,7 @@ export default function HTML(props) {
 
 				<script
 					async
-					src="https://www.googletagmanager.com/gtag/js?id=G-GCL4V7Z8LC"
+					src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GA_TRACKING_CODE}`}
 				></script>
 				<script
 					dangerouslySetInnerHTML={{
@@ -30,11 +30,11 @@ export default function HTML(props) {
 						function gtag(){dataLayer.push(arguments);}
 						gtag('js', new Date());
 
-						gtag('config', 'G-GCL4V7Z8LC', {
-							'anonymize_ip': true,
+						gtag('config', '${process.env.GA_TRACKING_CODE}', {
 							'cookie_expires' : 395 * 24 * 60 * 60,
 							'send_page_view': false
 						});
+						window['ga-disable-${process.env.GA_TRACKING_CODE}'] = (localStorage.getItem('cookies-accepted') !== 'true');
 					`
 					}}
 				/>
