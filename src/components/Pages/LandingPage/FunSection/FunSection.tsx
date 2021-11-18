@@ -6,6 +6,10 @@ import './FunSection.scss'
 const FunSection = () => {
 	return (
 		<div className="FunSection">
+			<DecoratedH2>Mes outils de prédilection</DecoratedH2>
+
+			<div>VSCode, Illustrator, Slack, Clickup</div>
+
 			<DecoratedH2>En vrac !</DecoratedH2>
 
 			<div>

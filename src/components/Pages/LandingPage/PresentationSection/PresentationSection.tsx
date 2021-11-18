@@ -35,27 +35,27 @@ const PresentationSection = () => {
 						</div>
 					</div>
 					<div>
-						<h1>
-							Développeur React <span className="separator">/</span> Node
-						</h1>
+						<h1>Développeur React</h1>
 						<p className="subtitle">
-							Gatsby • Typescript • SCSS • Netlify • Jest
+							Gatsby • NextJS • Typescript • SCSS • NodeJS
 						</p>
 
 						<p>
-							Développeur React indépendant à Lyon depuis plus de quatre ans et
-							passionné de frontend depuis toujours, j'apporte une attention
-							particulière à développer des applications <u>fiables</u>,{' '}
-							<u>scalables</u> et <u>faciles à utiliser</u>.
+							Spécialisé en React depuis plus de quatre ans, je suis
+							actuellement lead-développeur chez{' '}
+							<a href="https://coq-trotteur.com">coq-trotteur</a>.
 						</p>
 
-						<p>Je ne suis actuellement pas disponible pour des missions.</p>
+						<p>
+							Ma ligne directice : bonne architecture de code, choix
+							technologiques adaptés, fiabilité de l'application et code claire
+							et maintenable.
+						</p>
 
-						{/* <p>
-							Je vous aide à mettre en place et développer votre projet. Je mets
-							en place des bonnes pratiques : structure du projet, travail
-							d'équipe, choix technologiques adaptés en fonction de vos besoins.
-						</p> */}
+						<p>
+							Mes connaissances en UI, UX, copywriting, management me permettent
+							de mieux cerner les projets sur lesquels je travaille.
+						</p>
 
 						<a
 							// href="https://www.linkedin.com/in/anthonyjeamme/"
