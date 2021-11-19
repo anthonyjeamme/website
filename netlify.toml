@@ -1,5 +1,5 @@
 [context.master.environment]
-  GA_TRACKING_CODE = G-GCL4V7Z8LC
+GA_TRACKING_CODE = "G-GCL4V7Z8LC"
 
 [context.dev.environment]
-  GA_TRACKING_CODE = G-N2HVQF6VPB
+GA_TRACKING_CODE = "G-N2HVQF6VPB"
